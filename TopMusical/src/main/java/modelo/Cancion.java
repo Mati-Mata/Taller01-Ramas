@@ -68,7 +68,7 @@ public class Cancion implements Comparable<Cancion> {
     public static ArrayList<Cancion> leerCanciones() {
         ArrayList<Cancion> lista = new ArrayList<>();
 
-        try ( BufferedReader br = new BufferedReader(new FileReader("top10.csv"))) {
+        try ( BufferedReader br = new BufferedReader(new FileReader(".\\TopMusical\\top10.csv"))) {
             String linea = "";
             while ((linea = br.readLine()) != null) {
                 String[] datos = linea.split(";");
@@ -92,12 +92,13 @@ public class Cancion implements Comparable<Cancion> {
         s = "15,10,7,3,2,1,2,3";
         Cancion c2 = new Cancion("Unholy","Sam Smith & Kim Petras","unholy.jpg",3,2,1,8,new ArrayList<>(Arrays.asList(s.split(","))));
         lista.add(c2);*/
+        lista.sort(null);
         return lista;
     }
 
     @Override
     public int compareTo(Cancion o) {
-        return posActual - o.posActual;
+        return Integer.compare(o.posActual, this.posActual);
     }
 
 }
