@@ -61,8 +61,7 @@ public class PrimaryController {
         lblTitulo.setText(c.getTitulo());
 
         try {
-            Image img = new Image(new FileInputStream("img/" + c.getImagen()), 100, 100, true, true);
-            ivCancion.setImage(img);
+Image img = new Image(new FileInputStream(".\\TopMusical\\img/" + c.getImagen()), 50, 50, true, true);            ivCancion.setImage(img);
 
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
