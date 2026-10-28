@@ -4,7 +4,8 @@ Taller01-Ramas
 ![alt text](image-3.png)
 
 ## Cambios de la rama orden
-![alt text](Captura de pantalla 2026-10-26 192705.png)
+<img width="642" height="720" alt="image" src="https://github.com/user-attachments/assets/e5e822fe-2050-4575-b34d-40938a53392b" />
+
 
 ## Integrante 3 - Artista
 
